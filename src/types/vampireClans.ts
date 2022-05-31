@@ -1,0 +1,17 @@
+export enum VampireClans {
+  Assamites = 'Assamites',
+  Brujah = 'Brujah',
+  Gangrel = 'Gangrel',
+  Giovanni = 'Giovanni',
+  Lasombra = 'Lasombra',
+  Malkavian = 'Malkavian',
+  FollowersOfSet = 'Followers of Set',
+  Nosferatu = 'Nosferatu',
+  Ravnos = 'Ravnos',
+  Salubri = 'Salubri',
+  Samedi = 'Samedi',
+  Toreador = 'Toreador',
+  Tremere = 'Tremere',
+  Tzimisce = 'Tzimisce',
+  Ventrue = 'Ventrue',
+}
