@@ -23,11 +23,13 @@
     width: 10px;
     height: 10px;
     border: 2px solid #2b2d42;
+    border: 2px solid #fef5ef;
     border-radius: 50%;
   }
 
   .CharacterPoints__point_fill {
     background: #2b2d42;
+    background: #fef5ef;
   }
 </style>
 

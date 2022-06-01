@@ -14,6 +14,7 @@ characterStore.subscribe(value => character = value)
     background: none;
     outline: none;
     color: #f4e8c1;
+    color: #323031;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 8px;

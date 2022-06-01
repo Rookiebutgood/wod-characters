@@ -2,13 +2,15 @@ import { AislingSturbridge } from './npc/AislingSturbridge'
 import { Calebros } from './npc/Calebros'
 import { CarterVanderweyden } from './npc/CarterVanderweyden'
 import { DavidMorgan } from './npc/DavidMorgan'
+import { DonatelloGiovanni } from './npc/DonatelloGiovanni'
 import { Gemini } from './npc/Gemini'
 import { HelenaPanhard } from './npc/HelenaPanhard'
 import { Krid } from './npc/Krid'
-import { UncleSmelly } from './npc/UncleSmelly'
 import { MarcelGuilbeau } from './npc/MarcelGuilbeau'
-import { TheoBell } from './npc/TheoBell'
 import { QadirAlAsmai } from './npc/QadirAlAsmai'
+import { SunYang } from './npc/SunYang'
+import { TheoBell } from './npc/TheoBell'
+import { UncleSmelly } from './npc/UncleSmelly'
 
 import { Frank } from './player/Frank'
 import { KronDawnfal } from './player/KronDawnfal'
@@ -23,13 +25,15 @@ export {
   Calebros,
   CarterVanderweyden,
   DavidMorgan,
+  DonatelloGiovanni,
+  Gemini,
   HelenaPanhard,  
   Krid,
-  QadirAlAsmai, 
-  UncleSmelly,
   MarcelGuilbeau,
-  Gemini,
+  QadirAlAsmai,
+  SunYang,
   TheoBell,
+  UncleSmelly,
   Frank,
   KronDawnfal,
   Pivein,

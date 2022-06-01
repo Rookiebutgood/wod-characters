@@ -16,8 +16,9 @@
     align-items: center;
     justify-content: center;
     background: #f4e8c1ff;
-    width: 190px;
-    height: 190px;
+    background: #323031;
+    width: 195px;
+    height: 195px;
     padding: 24px 8px;
     box-sizing: border-box;
     margin-right: 16px;
@@ -33,9 +34,10 @@
   }
 
   .characterCard__name {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: #2b2d42ff;
+    color: #fef5ef;
   }
 
   .characterCard__from {

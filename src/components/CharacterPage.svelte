@@ -16,6 +16,8 @@
     box-sizing: border-box;
     color: #2b2d42;
     background: #f4e8c1;
+    color: #fef5ef;
+    background: #323031;
     border-radius: 8px;
   }
   .CharacterPage__left {
@@ -26,6 +28,7 @@
     padding-bottom: 8px;
     margin-right: 24px;
     border-bottom: 1px solid #2b2d42;
+    border-bottom: 1px solid #fef5ef;
   }
   .CharacterPage__description {
     padding-top: 16px;

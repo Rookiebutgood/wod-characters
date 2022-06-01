@@ -1,5 +1,4 @@
 const translate = {
-
   strength: 'Сила',
   dexterity: 'Ловкость',
   stamina: 'Выносливость',
