@@ -3,7 +3,6 @@
     width: 100%;
     min-height: 100%;
     margin: 0;
-    padding: 28px 42px;
     background: #331e38ff;
     background: #fef5ef;
     box-sizing: border-box;

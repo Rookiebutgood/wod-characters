@@ -22,6 +22,7 @@ import { Madison } from './player/Madison'
 import { MitchFoster } from './player/MitchFoster'
 
 import { ElenaCastellianos } from './storyteller/ElenaCastellianos'
+import { Jasmin } from './storyteller/Jasmin'
 
 export {
   AislingSturbridge,
@@ -44,5 +45,6 @@ export {
   Judi,
   MitchFoster,
   Madison,
-  ElenaCastellianos
+  ElenaCastellianos,
+  Jasmin
 }

@@ -17,8 +17,8 @@
     justify-content: center;
     background: #f4e8c1ff;
     background: #323031;
-    width: 195px;
-    height: 195px;
+    width: 220px;
+    height: 220px;
     padding: 24px 8px;
     box-sizing: border-box;
     margin-right: 16px;
@@ -34,7 +34,7 @@
   }
 
   .characterCard__name {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: #2b2d42ff;
     color: #fef5ef;
@@ -46,6 +46,7 @@
     margin: 8px 32px;
     padding: 4px;
     border-radius: 8px;
+    font-size: 20px;
   }
 
   .characterCard__city {
@@ -54,6 +55,7 @@
     margin: 0px 32px;
     padding: 4px;
     border-radius: 8px;
+    font-size: 20px;
   }
 </style>
 
