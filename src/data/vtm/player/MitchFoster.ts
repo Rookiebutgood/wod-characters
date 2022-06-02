@@ -36,7 +36,7 @@ export const MitchFoster: Character = {
         intimidation: 3,
         leadership: 4,
         streetwise: 2,
-        subterfuge: 1,
+        subterfuge: 2,
       },
       skills: {
         etiquette: 2,
@@ -55,8 +55,9 @@ export const MitchFoster: Character = {
     },
     advantages: {
       disciplines: {
-        auspex: 1,
-        dominate: 3,
+        dominate: 4,
+        presence: 1,
+        necromacy: 2,
       },
       backgrounds: {
         allies: 1,
@@ -68,7 +69,7 @@ export const MitchFoster: Character = {
       },
       virtues: {
         conscience: 3,
-        selfControl: 2,
+        selfControl: 3,
         courage: 3
       }
     },

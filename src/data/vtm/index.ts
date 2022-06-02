@@ -18,7 +18,10 @@ import { Pivein } from './player/Pivein'
 
 import { Emily } from './player/Emily'
 import { Judi } from './player/Judi'
+import { Madison } from './player/Madison'
 import { MitchFoster } from './player/MitchFoster'
+
+import { ElenaCastellianos } from './storyteller/ElenaCastellianos'
 
 export {
   AislingSturbridge,
@@ -39,5 +42,7 @@ export {
   Pivein,
   Emily,
   Judi,
-  MitchFoster
+  MitchFoster,
+  Madison,
+  ElenaCastellianos
 }
