@@ -32,9 +32,10 @@
   }
   .CharacterPage__description {
     padding-top: 16px;
+    margin-right: 24px;
   }
   .CharacterPage__right {
-    width: 60%;
+    width: 65%;
     border-left: 1px solid;
     padding-left: 24px;
   }

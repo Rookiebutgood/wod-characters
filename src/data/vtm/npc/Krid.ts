@@ -45,10 +45,10 @@ export const Krid: Character = {
       },
       knowledges: {
         academic: 1,
-        areaKnowledge: 1, // ?
         computer: 1,
         occult: 1,
         politics: 3,
+        areaKnowledge: 1, // ?
       }
     },
     advantages: {

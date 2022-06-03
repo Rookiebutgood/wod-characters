@@ -39,10 +39,10 @@ const translate = {
   security: 'Безопасность',
   stealth: 'Скрытность',
   survival: 'Выживание',
-
   
   camouflage: 'Маскировка', // ?
   disguise: 'Переодевание', // ?
+  martialArts: 'Боевые искусства',
 
   academic: 'Академические',
   computer: 'Компьютеры',

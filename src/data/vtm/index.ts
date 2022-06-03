@@ -23,6 +23,9 @@ import { MitchFoster } from './player/MitchFoster'
 
 import { ElenaCastellianos } from './storyteller/ElenaCastellianos'
 import { Jasmin } from './storyteller/Jasmin'
+import { HiroshiInagawa } from './storyteller/HiroshiInagawa'
+import { AlanMorrison } from './storyteller/AlanMorrison'
+import { BillyGordon } from './storyteller/BillyGordon'
 
 export {
   AislingSturbridge,
@@ -46,5 +49,8 @@ export {
   MitchFoster,
   Madison,
   ElenaCastellianos,
-  Jasmin
+  Jasmin,
+  HiroshiInagawa,
+  AlanMorrison,
+  BillyGordon
 }
