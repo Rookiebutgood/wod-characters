@@ -15,7 +15,8 @@
   }
 
   .CharacterPoints__name {
-    width: 150px;
+    width: 180px;
+    font-size: 18px;
   }
 
   .CharacterPoints__point {

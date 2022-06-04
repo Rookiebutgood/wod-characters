@@ -9,7 +9,7 @@
   }
 
   .page__content {
-    margin: 0 auto;
+    width: 100%;
   }
 
   .header__list {

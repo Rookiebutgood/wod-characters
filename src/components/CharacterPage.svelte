@@ -10,7 +10,7 @@
 
 <style>
   .CharacterPage {
-    width: 1200px;
+    width: 100%;
     display: flex;
     padding: 24px;
     box-sizing: border-box;
@@ -71,7 +71,7 @@
     </div>
     <div class="CharacterPage__description">
       <h2 class="CharacterPage__title">Описание</h2>
-      { character.description }
+      <p>{ character.description }</p>
     </div>
   </div>
   <div class="CharacterPage__right">
