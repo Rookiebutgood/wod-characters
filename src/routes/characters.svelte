@@ -4,8 +4,8 @@
   import characterStore from '../store/character'
 
   let character
-
-characterStore.subscribe(value => character = value)
+  
+  characterStore.subscribe(value => character = value)
 </script>
 
 <style>
