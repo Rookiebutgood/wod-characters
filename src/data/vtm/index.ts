@@ -27,6 +27,7 @@ import { HiroshiInagawa } from './storyteller/HiroshiInagawa'
 import { AlanMorrison } from './storyteller/AlanMorrison'
 import { BillyGordon } from './storyteller/BillyGordon'
 import { Angela } from './storyteller/Angela'
+import { AliceDupont } from './storyteller/AliceDupont'
 
 export {
   AislingSturbridge,
@@ -54,5 +55,6 @@ export {
   HiroshiInagawa,
   AlanMorrison,
   BillyGordon,
-  Angela
+  Angela,
+  AliceDupont
 }
