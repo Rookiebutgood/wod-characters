@@ -1,16 +1,13 @@
+import type { DemonFactions, DemonHouses } from './demons'
 import type { Disciplines } from './disciplines'
-import type { Lore } from './lore'
+import type { Lores } from './lores'
 import type { Spheres } from './spheres'
 import type { VampireClans } from './vampireClans'
 
-type attributeValue = number | { value: number, spec: string }
+type usualValue = number | undefined
+type attributeValue = usualValue | { value: number, spec: string }
 
 export type Sheet = {
-  personal: {
-    clan?: VampireClans;
-    generation?: number;
-    [index: string]: any;
-  };
   attributes: {
     physical: {
       strength: attributeValue;
@@ -72,22 +69,40 @@ export type Sheet = {
   }
   advantages: {
     backgrounds?: {
-      allies?: number;
-      contacts?: number;
-      fame?: number;
-      herd?: number;
-      influence?: number;
-      mentor?: number;
-      resources?: number;
-      retainers?: number;
-      status?: number;
-      [index: string]: number;
+      allies?: usualValue;
+      contacts?: usualValue;
+      fame?: usualValue;
+      herd?: usualValue;
+      influence?: usualValue;
+      mentor?: usualValue;
+      resources?: usualValue;
+      retainers?: usualValue;
+      status?: usualValue;
+      [index: string]: usualValue;
     };
-    disciplines?: Disciplines;
     gifts?: object;
     spheres?: Spheres;
-    lore?: Lore;
     virtues?: object;
   };
   points: object;
+}
+
+export type VampireSheet = Sheet & {
+  personal: {
+    clan: VampireClans;
+    generation: number;
+  };
+  advantages: {
+    disciplines: Disciplines;
+  }
+}
+
+export type DemonSheet = Sheet & {
+  personal: {
+    house: DemonHouses;
+    faction: DemonFactions;
+  };
+  advantages: {
+    lores: Lores
+  }
 }
