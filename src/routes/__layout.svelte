@@ -12,7 +12,7 @@
     width: 100%;
   }
 
-  .header__list {
+  /* .header__list {
     list-style: none;
     display: flex;
     margin: 24px 0;
@@ -37,7 +37,7 @@
 
   .header__item:not(:first-child) {
     margin-left: 8px;
-  }
+  } */
 
   /* .header__item_disable {
     text-decoration: line-through;
@@ -56,12 +56,12 @@
   <div class="page__content">
     <div class="header">
       <h1 class="pageTitle">Персонажи</h1>
-      <ul class="header__list">
+      <!-- <ul class="header__list">
         <li class="header__item">Вампиры</li>
         <li class="header__item">Оборотни</li>
         <li class="header__item">Маги</li>
         <li class="header__item">Демоны</li>
-      </ul>
+      </ul> -->
     </div>
     <slot></slot>
   </div>
