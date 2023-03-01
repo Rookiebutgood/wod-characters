@@ -80,8 +80,10 @@ export type Sheet = {
       status?: usualValue;
       [index: string]: usualValue;
     };
+    disciplines?: Disciplines;
     gifts?: object;
     spheres?: Spheres;
+    lores?: object;
     virtues?: object;
   };
   points: object;

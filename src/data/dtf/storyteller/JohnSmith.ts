@@ -1,4 +1,4 @@
-import { DemonHouses, DemonFactions } from 'src/types/demons'
+import { DemonHouses, DemonFactions } from '../../../types/demons'
 import type { Character } from '../../../types'
 
 export const JohnSmith: Character = {
@@ -30,15 +30,27 @@ export const JohnSmith: Character = {
     },
     abilities: {
       talents: {
-
+        athletics: 1,
+        dodge: 1,
+        empathy: 3,
+        expression: 2,
+        streetwise: 2,
+        subterfuge: 2
       },
       skills: {
-
+        drive: 2,
+        etiquette: 4, 
+        firearms: 1,
+        stealth: 2, 
       },
       knowledges: {
-
+        academic: 3,
+        finance: 3,
+        linguistic: 4,
+        occult: 4,
+        politics: 2,
+      }
     },
-  },
     advantages: {
       backgrounds: {
       

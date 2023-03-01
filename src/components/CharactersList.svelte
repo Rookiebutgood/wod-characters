@@ -1,6 +1,9 @@
 <script lang="ts">
-  import * as chars from '../data/vtm'  
-  import characterStore from '../store/character'
+import * as vampires from '../data/vtm'
+import * as demons from '../data/dtf'
+import characterStore from '../store/character'
+
+const chars = {...vampires, ...demons}
 </script>
 
 <style>
@@ -15,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f4e8c1ff;
+    background: #f4e8c1;
     background: #323031;
     width: 220px;
     height: 220px;
@@ -41,12 +44,30 @@
   }
 
   .characterCard__from {
-    background: #D52941;
-    color: #fff;
     margin: 8px 32px;
     padding: 4px;
     border-radius: 8px;
     font-size: 20px;
+  }
+
+  .characterCard__from_vtm{
+    background: #D52941;
+    color: #fff;
+  }
+
+  .characterCard__from_wta{
+    background: #679436;
+    color: #fff;
+  }
+
+  .characterCard__from_mta{
+    background: #7F0799;
+    color: #fff;
+  }
+
+  .characterCard__from_dtf{
+    background: #FFB400;
+    color: #323031;
   }
 
   .characterCard__city {
@@ -63,7 +84,15 @@
   { #each Object.values(chars).sort((a, b) => a.name > b. name ? 1 : -1) as ch (ch.name) }
   <div class="characterCard" on:click="{ () => characterStore.set(ch) }">
     <span class="characterCard__name">{ ch.name }{#if ch.player}*{/if}</span>
-    <span class="characterCard__from">{ ch.from }</span>
+    <span 
+      class="characterCard__from"
+      class:characterCard__from_vtm={ ch.from == 'vtm' }
+      class:characterCard__from_wta={ ch.from == 'wta' }
+      class:characterCard__from_mta={ ch.from == 'mta' }
+      class:characterCard__from_dtf={ ch.from == 'dtf' }
+    >
+    { ch.from }
+    </span>
     <span class="characterCard__city">{ ch.city }</span>
   </div>
   { /each }

@@ -24,7 +24,7 @@ const translate = {
   
   search: 'Поиск', //?
   diplomacy: 'Дипломатия', // ?
-  grace: 'Грация', // ?
+  grace: 'Изящество', // ?
   interrogation: 'Допрос', // ?
   intrigue: 'Интриги', // ?
   intuition: 'Интуиция', // ?
@@ -44,7 +44,7 @@ const translate = {
   disguise: 'Переодевание', // ?
   martialArts: 'Боевые искусства',
 
-  academic: 'Академические',
+  academic: 'Академические', //knowledges
   computer: 'Компьютеры',
   finance: 'Финансы',
   investigation: 'Расследования',
@@ -56,9 +56,10 @@ const translate = {
   science: 'Наука',
 
   clanKnowledge: 'Знание кланов', // ?
+  clanPrestige: 'Престиж в клане', //? 
   camarillaLore: 'Знание Камарильи', // ?
   sabbatLore: 'Знание Шабаша', // ?
-  areaKnowledge: '', // Manhetten // ?
+  areaKnowledge: 'Знание местности', // Manhetten // ?
   bureaucracy: 'Бюрократия', // ?
   citySecrets: '', // ?
   history: 'История', // ?
@@ -110,6 +111,10 @@ const translate = {
   thaumaturgyCountermagic: 'Тауматургия - Контрмагия',
   vicissitude: 'Изменчивость',
 
+  loreTransfiguration: 'Знание Метаморфоз',
+  loreLonging: 'Знание Желания',
+  loreStorms: 'Знание Бурь',
+
   allies: 'Союзники',
   contacts: 'Связи',
   fame: 'Слава',
@@ -119,11 +124,34 @@ const translate = {
   resources: 'Ресурсы',
   retainers: 'Слуги',
   status: 'Статус',
-  clanPrestige: 'Уважение клана', // ?
+  rituals: 'Ритуалы', //?
+  //wta
+  ancestors: 'Предки',
+  fetish: 'Фетиш',
+  kinfolk: 'Родня',
+  pureBreed: 'Чистота рода',
+  rites: 'Обряды',
+  totem: 'Тотем',
+  //mta
+  arcane: 'Сокрытие',
+  avatar: 'Аватар',
+  destiny: 'Судьба',
+  dream: 'Греза',
+  library: 'Библиотека',
+  node: 'Узел',
+  wonder: 'Талисман', 
+  //dtf
+  eminence: 'Высокое положение',
+  followers: 'Последователи',
+  legacy: 'Наследие',
+  pacts: 'Договоры',
+  paragon: 'Совершенство',
 
   conscience: 'Сознательность',
   selfControl: 'Самоконтроль',
-  courage: 'Храбрость' 
+  courage: 'Смелость', 
+  conviction: 'Убежденность',
+  instincts: 'Инстинкты'
 }
 
 export const translateAttribute = (name: string): string => {

@@ -7,6 +7,7 @@ import { Gemini } from './npc/Gemini'
 import { HelenaPanhard } from './npc/HelenaPanhard'
 import { Krid } from './npc/Krid'
 import { MarcelGuilbeau } from './npc/MarcelGuilbeau'
+import { Dutch } from './npc/Dutch'
 import { QadirAlAsmai } from './npc/QadirAlAsmai'
 import { SunYang } from './npc/SunYang'
 import { TheoBell } from './npc/TheoBell'
@@ -20,6 +21,7 @@ import { Emily } from './player/Emily'
 import { Judi } from './player/Judi'
 import { Madison } from './player/Madison'
 import { MitchFoster } from './player/MitchFoster'
+import { Nicole } from './player/Nicole'
 
 import { ElenaCastellianos } from './storyteller/ElenaCastellianos'
 import { Jasmin } from './storyteller/Jasmin'
@@ -39,6 +41,7 @@ export {
   HelenaPanhard,  
   Krid,
   MarcelGuilbeau,
+  Dutch,
   QadirAlAsmai,
   SunYang,
   TheoBell,
@@ -50,6 +53,7 @@ export {
   Judi,
   MitchFoster,
   Madison,
+  Nicole,
   ElenaCastellianos,
   Jasmin,
   HiroshiInagawa,

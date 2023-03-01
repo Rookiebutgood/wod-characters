@@ -91,16 +91,26 @@
           {/each}
         </div>
         <div class="CharacterSheet__column">
-          <span class="CharacterSheet__columnName">Дисциплины</span>
-          {#each Object.entries(sheet.advantages.disciplines) as disciplines }
-            <CharacterPoints data={ disciplines }/>
+          {#if sheet.advantages.disciplines}
+            <span class="CharacterSheet__columnName">Дисциплины</span>
+            {#each Object.entries(sheet.advantages.disciplines) as disciplines }
+              <CharacterPoints data={ disciplines }/>
+            {/each}
+          {/if}
+          {#if sheet.advantages.lores}
+          <span class="CharacterSheet__columnName">Знания</span>
+          {#each Object.entries(sheet.advantages.lores) as lores }
+            <CharacterPoints data={ lores }/>
           {/each}
+        {/if}
         </div>
         <div class="CharacterSheet__column">
-          <span class="CharacterSheet__columnName">Добродетели</span>
-          {#each Object.entries(sheet.advantages.virtues) as virtues }
-            <CharacterPoints data={ virtues }/>
-          {/each}
+          {#if sheet.advantages.virtues}
+            <span class="CharacterSheet__columnName">Добродетели</span>
+            {#each Object.entries(sheet.advantages.virtues) as virtues }
+              <CharacterPoints data={ virtues }/>
+            {/each}
+          {/if}
         </div>
       </div>
   </div>
