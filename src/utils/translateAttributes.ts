@@ -111,6 +111,16 @@ const translate = {
   thaumaturgyCountermagic: 'Тауматургия - Контрмагия',
   vicissitude: 'Изменчивость',
 
+  sphereTime: 'Время',
+  sphereSpirit: 'Дух',
+  sphereLife: 'Жизнь',
+  sphereMatter: 'Материя',
+  spherePrime: 'Основы',
+  sphereMind: 'Разум',
+  sphereCorrespondence: 'Связи',
+  sphereForces: 'Силы',
+  sphereEntropy: 'Энтропия',
+
   loreAwakening: 'Знание Пробуждения',
   loreBeast: 'Знание Зверей',
   loreCelestials: 'Знание Небожителей',

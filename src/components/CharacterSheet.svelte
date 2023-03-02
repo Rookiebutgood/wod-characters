@@ -97,6 +97,12 @@
               <CharacterPoints data={ disciplines }/>
             {/each}
           {/if}
+          {#if sheet.advantages.spheres}
+          <span class="CharacterSheet__columnName">Сферы</span>
+          {#each Object.entries(sheet.advantages.spheres) as spheres }
+            <CharacterPoints data={ spheres }/>
+          {/each}
+        {/if}
           {#if sheet.advantages.lores}
           <span class="CharacterSheet__columnName">Знания</span>
           {#each Object.entries(sheet.advantages.lores) as lores }

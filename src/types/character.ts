@@ -1,4 +1,4 @@
-import type { DemonSheet, Sheet, VampireSheet } from './sheet'
+import type { DemonSheet, MageSheet, Sheet, VampireSheet } from './sheet'
 
 export type Character = {
   name: string;
@@ -6,5 +6,5 @@ export type Character = {
   from: string;
   city: string;
   description: string;
-  sheet: VampireSheet | DemonSheet;
+  sheet: VampireSheet | MageSheet | DemonSheet;
 }

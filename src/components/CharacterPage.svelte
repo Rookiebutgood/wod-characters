@@ -65,8 +65,13 @@
       <ul class="CharacterPage__list">
         <li class="CharacterPage__item">Откуда: { character.from }</li>
         <li class="CharacterPage__item">Город: { character.city }</li>
-        <li class="CharacterPage__item">Клан: { character.sheet.personal.clan }</li>
-        <li class="CharacterPage__item">Поколение: { character.sheet.personal.generation }</li>
+        {#if character.from == 'vtm'}
+          <li class="CharacterPage__item">Клан: { character.sheet.personal.clan }</li>
+          <li class="CharacterPage__item">Поколение: { character.sheet.personal.generation }</li>
+        {/if}
+        {#if character.from == 'dtf'}
+          <li class="CharacterPage__item">Дом: { character.sheet.personal.house }</li>
+        {/if}
       </ul>
     </div>
     <div class="CharacterPage__description">

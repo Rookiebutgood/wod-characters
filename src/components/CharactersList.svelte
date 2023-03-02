@@ -1,17 +1,33 @@
 <script lang="ts">
-import * as vampires from '../data/vtm'
-import * as demons from '../data/dtf'
-import characterStore from '../store/character'
+  import * as vampires from '../data/vtm'
+  import * as mages from '../data/mta'
+  import * as demons from '../data/dtf'
+  import characterStore from '../store/character'
 
-let systemFilter: string = ''
+  let systemFilter: string = ''
 
-const selectSystemFilter = (val :string) => {
-  systemFilter == val 
-    ? systemFilter = '' 
-    : systemFilter = val
-}
+  const selectSystemFilter = (val :string) => {
+    systemFilter == val 
+      ? systemFilter = '' 
+      : systemFilter = val
+  }
 
-const chars = {...vampires, ...demons}
+  const getSystem = (text :string) => {
+    switch(text) {
+      case 'vtm':
+        return 'Vampire'
+      case 'wta':
+        return 'Werewolf'
+      case 'mta':
+        return 'Mage'
+      case 'dtf':
+        return 'Demon'
+      default:
+        return ''
+    }
+  }
+
+  const chars = {...vampires, ...mages, ...demons}
 </script>
 
 <style>
@@ -165,7 +181,7 @@ const chars = {...vampires, ...demons}
       class:characterCard__from_mta={ ch.from == 'mta' }
       class:characterCard__from_dtf={ ch.from == 'dtf' }
     >
-    { ch.from }
+    { getSystem(ch.from) }
     </span>
     <span class="characterCard__city">{ ch.city }</span>
   </div>

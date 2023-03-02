@@ -1,6 +1,7 @@
 import type { DemonFactions, DemonHouses } from './demons'
 import type { Disciplines } from './disciplines'
 import type { Lores } from './lores'
+import type { MageTraditions } from './mages'
 import type { Spheres } from './spheres'
 import type { VampireClans } from './vampireClans'
 
@@ -96,6 +97,15 @@ export type VampireSheet = Sheet & {
   };
   advantages: {
     disciplines: Disciplines;
+  }
+}
+
+export type MageSheet = Sheet & {
+  personal: {
+    tradition: MageTraditions;
+  };
+  advantages: {
+    spheres: Spheres;
   }
 }
 
