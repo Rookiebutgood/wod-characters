@@ -7,6 +7,7 @@ import { Gemini } from './npc/Gemini'
 import { HelenaPanhard } from './npc/HelenaPanhard'
 import { Krid } from './npc/Krid'
 import { MarcelGuilbeau } from './npc/MarcelGuilbeau'
+import { Morgaine } from './npc/Morgaine'
 import { Dutch } from './npc/Dutch'
 import { QadirAlAsmai } from './npc/QadirAlAsmai'
 import { SunYang } from './npc/SunYang'
@@ -41,6 +42,7 @@ export {
   HelenaPanhard,  
   Krid,
   MarcelGuilbeau,
+  Morgaine,
   Dutch,
   QadirAlAsmai,
   SunYang,

@@ -33,7 +33,7 @@ export const MarcelGuilbeau: Character = {
         acting: 2, //?
         alertness: 3,
         brawl: 3,
-        diplomacy: 3,
+        diplomacy: 3, //?
         dodge: 4,
         intimidation: 4,
         leadership: 3,
