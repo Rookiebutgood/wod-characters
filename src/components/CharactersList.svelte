@@ -3,6 +3,7 @@
   import * as mages from '../data/mta'
   import * as demons from '../data/dtf'
   import characterStore from '../store/character'
+  import CharactersSystemFilter from './CharactersSystemFilter.svelte';
 
   let systemFilter: string = ''
 
@@ -31,36 +32,6 @@
 </script>
 
 <style>
-  .systemFilter {
-    list-style: none;
-    display: flex;
-    margin: 24px 0;
-    padding: 0;
-  }
-
-  .systemFilter__item {
-    color: #323031;
-    border: 3px solid #323031;
-    font-size: 22px;
-    font-weight: 700;
-    padding: 4px;
-    cursor: pointer;
-    transition: padding .2s ease-in;
-  }
-
-  .systemFilter__item:hover {
-    padding: 4px 16px;
-  }
-
-  .systemFilter__item:not(:first-child) {
-    margin-left: 8px;
-  }
-
-  .systemFilter__item_selected {
-    background: #323031;
-    color: #f4e8c1;
-  }
-
   .characterList {
     display: flex;
     flex-wrap: wrap;
@@ -134,36 +105,11 @@
   }
 </style>
 
-<ul class="systemFilter">
-  <li
-    on:click={ () => selectSystemFilter('vtm') }
-    class="systemFilter__item"
-    class:systemFilter__item_selected={ systemFilter == 'vtm' }
-  >
-    Вампиры
-  </li>
-  <li
-    on:click={ () => selectSystemFilter('wta') }
-    class="systemFilter__item"
-    class:systemFilter__item_selected={ systemFilter == 'wta' }
-  >
-    Оборотни
-  </li>
-  <li
-    on:click={ () => selectSystemFilter('mta') }
-    class="systemFilter__item"
-    class:systemFilter__item_selected={ systemFilter == 'mta' }
-  >
-    Маги
-  </li>
-  <li
-    on:click={ () => selectSystemFilter('dtf') }
-    class="systemFilter__item"
-    class:systemFilter__item_selected={ systemFilter == 'dtf' }
-  >
-    Демоны
-  </li>
-</ul>
+
+<CharactersSystemFilter 
+  filterValue={ systemFilter }
+  selectSystemFilter={ selectSystemFilter }
+  />
 <div class="characterList">
   { #each 
     Object.values(chars)
